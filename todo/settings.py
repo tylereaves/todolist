@@ -4,8 +4,8 @@ import os
 
 PROJECT_ROOT = os.path.dirname(__file__)
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+DEBUG = False
+TEMPLATE_DEBUG = False
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -134,7 +134,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrapform',
-    'debug_toolbar',
 
     # Uncomment the next line to enable the admin:
     'todolist',
