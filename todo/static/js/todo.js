@@ -2,7 +2,6 @@ function handle_form(id,callback){
   $(id).submit(function (e) {
     var postData = $(this).serializeArray();
     var formURL = $(this).attr("action");
-    $(this).find('input[type="submit"]').removeClass("btn-primary").addClass("btn-warning");
     $.ajax(
       {
         url: formURL,
@@ -18,7 +17,7 @@ function handle_form(id,callback){
           }
           $(id).filter(".todo_form_inner").html(data["formhtml"]);
 
-          register_handlers(); //Make sure to update the handler bindings
+
         },
         error: function (jqXHR, textStatus, errorThrown) {
           alert("Ajax call failed");
@@ -28,27 +27,36 @@ function handle_form(id,callback){
   });
  };
 
-
+function handle_edit(item){
+  handle_form($(item), function(data){
+    $("#form-"+data["id"]).modal('hide');
+    $('li#entry-'+data["id"]).html(data["html"]);
+    $('.modal-backdrop').remove(); // Workaround Bootstrap bug
+  });
+}
+function handle_delete(item){
+  handle_form($(item), function(data){
+    $('li#entry-'+data["id"]).fadeOut(400,function(){this.remove()});
+  });
+}
 function register_handlers(){
   //Rebind the submit handlers when the list changes
   $("form.delete-form").each(function(){
-    handle_form(this, function(data){
-      $('li#entry-'+data["id"]).remove();
-    });
+    handle_delete(this);
   });
   $("form.edit-form").each(function(){
-    handle_form(this, function(data){
-      $("#form-"+data["id"]).modal('hide');
-      $('li#entry-'+data["id"]).html(data["html"]);
-      $('.modal-backdrop').remove(); // Workaround Bootstrap bug
-
-    });
+    handle_edit(this);
   });
+
 }
 
 $(document).ready(function () {
-  handle_form("#newform",function(data){
-      $('ul#todolist').append(data["html"])
-    });
+  handle_form($("#newform"),function(data){
+    $('ul#todolist').append(data["html"]);
+    //Bind handlers
+    handle_edit($('ul#todolist li:last-child form.edit-form'));
+    handle_delete($('ul#todolist li:last-child form.delete-form'));
+
+  });
   register_handlers();
 });
