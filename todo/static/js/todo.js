@@ -8,7 +8,6 @@ function handle_form(id,callback){
         type: "POST",
         data: postData,
         success: function (data, textStatus, jqXHR) {
-          console.log(data);
           if (data["status"] == "ok"){
             callback(data);
           }
@@ -59,6 +58,8 @@ $(document).ready(function () {
     //Bind handlers
     handle_edit($('ul#todolist li:last-child form.edit-form'));
     handle_delete($('ul#todolist li:last-child form.delete-form'));
+    $('#newform input[type="text"]').val("");
+    $('#newform textarea').val("");
 
   });
   register_handlers();
