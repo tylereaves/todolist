@@ -1,0 +1,30 @@
+<li id="entry-{{ todo.id }}">
+  <span class="title">{{ todo.title }}</span>
+  <span class="date">[{{ todo.created|date:"Y/m/d h:iA" }}]</span>
+  <br />
+  <p class="desc">{{ todo.desc }}
+    <button class="form-inline btn btn-primary btn-sm" data-toggle="modal" data-target="#form-{{ todo.id }}">Edit</button>
+    <form action="/{{ todo.id }}/delete" method="POST" class="delete-form form-inline"><input type="submit" class="btn btn-danger btn-sm" value="Delete" /></form>
+  </p>
+  <form action="/{{ todo.id }}/edit" method="POST" class="edit-form">
+  <div class="modal fade" id="form-{{ todo.id }}">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Edit Todo</h4>
+              </div>
+              <div class="modal-body">
+
+                  {%  include "partials/form.html" with form=todo.form %}
+
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <input type="submit" class="btn btn-primary" value="Save changes" />
+              </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  </form>
+</li>

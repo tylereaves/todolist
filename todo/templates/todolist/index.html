@@ -1,0 +1,9 @@
+{%  extends "todolist/base.html" %}
+
+{% block content %}
+    <ul id="todolist">
+    {% for todo in todos %}
+        {% include "partials/todo.html" %}
+    {% endfor %}
+    </ul>
+{% endblock %}
