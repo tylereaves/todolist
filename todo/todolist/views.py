@@ -5,6 +5,7 @@ from django.utils import simplejson
 from todolist.forms import TodoForm
 from django.template.loader import render_to_string
 from todolist.models import Todo
+from django.views.decorators.http import require_POST, require_GET
 
 
 #https://coderwall.com/p/k8vb_a
@@ -30,6 +31,7 @@ def json_response(func):
   return decorator
 
 @json_response
+@require_POST
 def create(request):
   f = TodoForm(request.POST)
   if f.is_valid():
@@ -44,6 +46,7 @@ def create(request):
             "formhtml":render_to_string("partials/form.html",{'form':f})}
 
 @json_response
+@require_POST
 def delete(request, id):
   try:
     t = Todo.objects.get(pk=id)
@@ -53,6 +56,7 @@ def delete(request, id):
   return {"status":"ok","id":id, "formhtml":""}
 
 @json_response
+@require_POST
 def edit(request, id):
   try:
     t = Todo.objects.get(pk=id)
