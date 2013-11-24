@@ -3,3 +3,8 @@ body { padding-top: 70px; }
 form.delete-form{
     display: inline;
 }
+
+.row-header span {
+    font-size: large;
+    font-weight: bold;
+}

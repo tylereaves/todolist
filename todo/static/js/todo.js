@@ -31,12 +31,15 @@ function handle_edit(item){
   handle_form($(item), function(data){
     $("#form-"+data["id"]).modal('hide');
     $('li#entry-'+data["id"]).html(data["html"]);
+    handle_edit($('li#entry-'+data["id"]+" form.edit-form"));
+    handle_delete($('li#entry-'+data["id"]+" form.delete-form"));
     $('.modal-backdrop').remove(); // Workaround Bootstrap bug
   });
 }
 function handle_delete(item){
   handle_form($(item), function(data){
     $('li#entry-'+data["id"]).fadeOut(400,function(){this.remove()});
+
   });
 }
 function register_handlers(){

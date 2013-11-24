@@ -1,11 +1,10 @@
 <li id="entry-{{ todo.id }}">
-  <span class="title">{{ todo.title }}</span>
+  <div class="row-header"><span class="title">{{ todo.title }}</span>
   <span class="date">[{{ todo.created|date:"Y/m/d h:iA" }}]</span>
-  <br />
-  <p class="desc">{{ todo.desc }}
     <button class="form-inline btn btn-primary btn-sm" data-toggle="modal" data-target="#form-{{ todo.id }}">Edit</button>
     <form action="/{{ todo.id }}/delete" method="POST" class="delete-form form-inline"><input type="submit" class="btn btn-danger btn-sm" value="Delete" /></form>
-  </p>
+  </div>
+  <p class="desc">{{ todo.desc }}</p>
   <form action="/{{ todo.id }}/edit" method="POST" class="edit-form">
   <div class="modal fade" id="form-{{ todo.id }}">
       <div class="modal-dialog">

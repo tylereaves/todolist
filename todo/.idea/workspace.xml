@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="312920ab-8ace-4bbe-960e-8d73b43142ab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/partials/form.html" afterPath="$PROJECT_DIR$/templates/partials/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/local.css" afterPath="$PROJECT_DIR$/static/css/local.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/partials/todo.html" afterPath="$PROJECT_DIR$/templates/partials/todo.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/todo.js" afterPath="$PROJECT_DIR$/static/js/todo.js" />
     </list>
     <ignored path="todo.iws" />
@@ -15,7 +16,7 @@
     <file path="/admin.py" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385081890848" ignored="false" />
     <file path="/urls.py" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385238659210" ignored="false" />
     <file path="/index.html" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385245300048" ignored="false" />
-    <file path="/todo.html" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385254193152" ignored="false" />
+    <file path="/todo.html" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385261384995" ignored="false" />
     <file path="/views.py" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385254079075" ignored="false" />
     <file path="/a.less" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385236678370" ignored="false" />
     <file path="/a.html" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385243966491" ignored="false" />
@@ -24,8 +25,8 @@
     <file path="/forms.py" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385242547984" ignored="false" />
     <file path="/a.java" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385243968320" ignored="false" />
     <file path="/a.js" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385243971926" ignored="false" />
-    <file path="/todo.js" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385261252998" ignored="false" />
-    <file path="/local.css" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385251536305" ignored="false" />
+    <file path="/todo.js" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385261644372" ignored="false" />
+    <file path="/local.css" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385261439307" ignored="false" />
     <file path="/base_site.html" changelist="312920ab-8ace-4bbe-960e-8d73b43142ab" time="1385255716839" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +91,7 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/todolist/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="56" selection-start="1828" selection-end="1828" vertical-scroll-proportion="-8.075472">
+            <state line="53" column="56" selection-start="1828" selection-end="1828" vertical-scroll-proportion="-9.735849">
               <folding />
             </state>
           </provider>
@@ -105,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="todo.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="27" selection-start="1617" selection-end="1617" vertical-scroll-proportion="0.0">
+            <state line="34" column="56" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.22619048">
               <folding />
             </state>
           </provider>
@@ -134,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="todo.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/partials/todo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="579" selection-end="584" vertical-scroll-proportion="0.30535713">
+            <state line="1" column="31" selection-start="61" selection-end="61" vertical-scroll-proportion="-0.6785714">
               <folding />
             </state>
           </provider>
@@ -164,7 +165,7 @@
       <file leaf-file-name="local.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/css/local.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
+            <state line="8" column="21" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -207,12 +208,12 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/todolist/models.py" />
         <option value="$PROJECT_DIR$/templates/todolist/index.html" />
-        <option value="$PROJECT_DIR$/static/css/local.css" />
         <option value="$PROJECT_DIR$/todolist/views.py" />
-        <option value="$PROJECT_DIR$/templates/partials/todo.html" />
         <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/templates/partials/form.html" />
         <option value="$PROJECT_DIR$/templates/todolist/base.html" />
+        <option value="$PROJECT_DIR$/templates/partials/todo.html" />
+        <option value="$PROJECT_DIR$/static/css/local.css" />
         <option value="$PROJECT_DIR$/static/js/todo.js" />
       </list>
     </option>
@@ -685,13 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/local.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/todolist/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="18" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0">
@@ -717,9 +711,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/partials/todo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="31" selection-start="61" selection-end="61" vertical-scroll-proportion="-0.6785714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/local.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/todolist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="33" selection-start="192" selection-end="192" vertical-scroll-proportion="-2.8679245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/todolist/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="56" selection-start="1828" selection-end="1828" vertical-scroll-proportion="-9.735849">
           <folding />
         </state>
       </provider>
@@ -731,23 +746,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/todolist/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="56" selection-start="1828" selection-end="1828" vertical-scroll-proportion="-8.075472">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/todo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="27" selection-start="1617" selection-end="1617" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/partials/todo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="579" selection-end="584" vertical-scroll-proportion="0.30535713">
+        <state line="34" column="56" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.22619048">
           <folding />
         </state>
       </provider>
